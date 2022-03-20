@@ -14,7 +14,7 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">Rezvi Ahmed Tanim</a>
-          <h5 style="color:black;">Adminitrartion</h5>
+          <h5 style="color:red;">Administration</h5>
         </div>
       </div>
 
@@ -36,33 +36,10 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('dashboard')}}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
+            Dashboard
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{route('house')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add House</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{route('home')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="../widgets.html" class="nav-link">
@@ -84,9 +61,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="{{route('house')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <p>Add House</p>
                 </a>
               </li>
               <li class="nav-item">

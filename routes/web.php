@@ -15,7 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('backend/pages/dashboard/home');
-});
+})->name('dashboard');
 Route::get('/house',[HouseController::class,'list'])->name('house');
 Route::post('/house/create',[HouseController::class,'create'])->name('house.create');
 Route::get('/dashboard',[HouseController::class,'dashboard'])->name('home');
+  
+// Route::get('/',function(){
+// return view('backend/pages/dashboard v3/tenant');
+// });
+// //Tenant routes
+// Route::get('/tenant', [TenantController::class,'list'])->name('tenant');
+// Route::post('/tenant/create', [TenantController::class,'create'])->name('tenant.create');
