@@ -23,6 +23,13 @@ Route::get('/dashboard',[HouseController::class,'dashboard'])->name('home');
 // Route::get('/',function(){
 // return view('backend/pages/dashboard v3/tenant');
 // });
-// //Tenant routes
-// Route::get('/tenant', [TenantController::class,'list'])->name('tenant');
-// Route::post('/tenant/create', [TenantController::class,'create'])->name('tenant.create');
+//Tenant routes
+Route::get('/tenant', [TenantController::class,'list'])->name('tenant');
+Route::post('/tenant/create', [TenantController::class,'create'])->name('tenant.create');
+
+//payemnt route
+Route::get('/paymentlist', [AdminPaymentController::class,'paymentlist'])->name('payment.list');
+
+//booking routes
+Route::get('/show/booking',[AdminBookingController::class,'showbooking'])->name('show.booking');
+Route::get('/booking/{id}/{status}',[AdminBookingController::class,'status'])->name('booking.status');

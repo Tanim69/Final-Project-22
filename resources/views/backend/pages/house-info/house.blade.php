@@ -24,6 +24,7 @@
        <td> {{$data->email}}</td>
        <td> {{$data->address}}</td>
        <td> {{$data->image}}</td>
+    
        <td>
            <a class="btn btn-success"  href="">View</a>
            <a class="btn btn-primary"  href="">Edit</a>

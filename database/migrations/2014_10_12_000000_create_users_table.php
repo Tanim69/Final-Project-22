@@ -17,6 +17,13 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('address');
+            $table->string('nidnumber');
+            $table->string('phonenumber');
+            $table->string('occupation');
+            $table->text('image')->default('default.jpg');
+            $table->string('role');
+            $table->integer('bkashrocketnumber');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
@@ -34,3 +41,4 @@ class CreateUsersTable extends Migration
         Schema::dropIfExists('users');
     }
 }
+
