@@ -67,9 +67,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                <a href="{{route('tenant')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
+                  <p>Tenant</p>
                 </a>
               </li>
               <li class="nav-item">

@@ -62,10 +62,14 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-@include('backend.fixed.footer')
-</div>
-<!-- ./wrapper -->
 
+</div>
+<div class="fixed-bottom">
+  @include('backend.fixed.footer')
+</div>
+
+<!-- ./wrapper -->
+ 
 <!-- jQuery -->
 <script src="{{url('backend/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->

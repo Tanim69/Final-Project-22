@@ -1,9 +1,10 @@
 @extends('backend.master')
-
 @section('content')
-
-
-
+<button style="float:right"; type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Add House
+</button>
+</br>
+</br>
 <table class="table">
   <thead>
     <tr>
@@ -35,10 +36,8 @@
 </tbody>
 </table>
 
-  <tr><!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add House
-</button>
+<!-- Button trigger modal -->
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -97,6 +96,5 @@
     </div>
   </div>
 </div>
-
 
 @endsection
