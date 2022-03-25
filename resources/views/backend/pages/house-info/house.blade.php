@@ -12,7 +12,7 @@
       <th scope="col">name</th>
       <th scope="col">email</th>
       <th scope="col">address</th>
-      <th scope="col">image</th>
+           <th scope="col">image</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -25,7 +25,7 @@
        <td> {{$data->email}}</td>
        <td> {{$data->address}}</td>
        <td> {{$data->image}}</td>
-    
+
        <td>
            <a class="btn btn-success"  href="">View</a>
            <a class="btn btn-primary"  href="">Edit</a>
@@ -50,7 +50,7 @@
         </button>
       </div>
 
-      <form action="{{route('house.create')}}" method="post">
+      <form action="{{route('house.create')}}" method="post" enctype="multipart/form-data">
 
       @csrf
 
@@ -61,25 +61,27 @@
     <label for="id">ID</label>
     <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID">
     </div>
+     <div class="form-group">
+    <label for="name"> Name</label>
+    <input type="text" class="form-control" id="name" name="name" aria-describedly="NameHelp" placeholder="Enter Name">
+  </div>
 
 
     <div class="form-group">
     <label for="email"> Email </label>
     <input type="text" class="form-control" id="email" name="email" aria-describedly="emailHelp" placeholder="Enter Name">
   </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" id="address" name="address" aria-describedly="addressHelp" placeholder="Enter Name">
+  </div>
 
   <div class="form-group">
     <label for="image"> Image</label>
     <input type="file" class="form-control" id="image" name="image" aria-describedly="imageHelp" placeholder="Enter Name">
   </div>
-  <div class="form-group">
-    <label for="name"> Name</label>
-    <input type="text" class="form-control" id="name" name="name" aria-describedly="NameHelp" placeholder="Enter Name">
-  </div>
-  <div class="form-group">
-    <label for="address">Address</label>
-    <input type="text" class="form-control" id="address" name="address" aria-describedly="addressHelp" placeholder="Enter Name">
-  </div>
+
+
 
 
   <button type="submit" class="btn btn-primary">Submit</button>
@@ -90,7 +92,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save</button>
       </div>
       </form>
     </div>

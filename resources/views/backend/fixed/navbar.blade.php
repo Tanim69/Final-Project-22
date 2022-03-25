@@ -14,7 +14,7 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">Rezvi Ahmed Tanim</a>
-          <h5 style="color:red;">Administration</h5>
+          <h5 style="color:white;">Administration</h5>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
                   <p>Tenant</p>
                 </a>
               </li>
-             
+
              </ul>
           </li>
 
@@ -87,7 +87,7 @@
                   <p>DataTables</p>
                 </a>
               </li>
-             
+
              </ul>
           </li>
           <li class="nav-item">
@@ -157,7 +157,7 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-             
+
               <li class="nav-item">
                 <a href="../examples/lockscreen.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

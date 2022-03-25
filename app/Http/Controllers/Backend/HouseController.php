@@ -20,19 +20,27 @@ class HouseController extends Controller
         // dd('fhbdhbv');
         // dd($request->all());
         //insert into house table
+          $filename = "";
+                    if($request->hasFile('image'))
+                    {
+                        $file= $request->file('image');
+                        $filename= date ('Ymdhms').'.'.$file->getClientOriginalExtension();
+                        $file->storeAs('/uploads', $filename);
+                    }
+                    // dd( $filename);
         House::create([
             'id'=>$request->id,
             'name'=>$request->name,
+             'address'=>$request->address,
             'email'=>$request->email,
-            'image'=>$request->image,
-            'address'=>$request->address,
+             'image'=>$filename
 
         ]);
         return redirect()->back();
 
 
     }
-    
+
     public function dashboard()
     {
         return view('backend.pages.dashboard.home');
