@@ -18,6 +18,7 @@ Route::get('/', function () {
 })->name('dashboard');
 Route::get('/house',[HouseController::class,'list'])->name('house');
 Route::post('/house/create',[HouseController::class,'create'])->name('house.create');
+Route::get('/house/delete/{id}',[HouseController::class,'delete'])->name('house.delete');
 Route::get('/dashboard',[HouseController::class,'dashboard'])->name('home');
   
 // Route::get('/',function(){

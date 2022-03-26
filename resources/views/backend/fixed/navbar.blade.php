@@ -10,7 +10,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div>
-          <img src="{{('/backend/dist/img/user1-128x128.jpg')}}" class="img-circle"style="height:90px; width:90px;" alt="User Image">
+          <img src="{{('/backend/dist/img/mehadi.jpg')}}" class="img-circle"style="height:90px; width:90px;" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Rezvi Ahmed Tanim</a>

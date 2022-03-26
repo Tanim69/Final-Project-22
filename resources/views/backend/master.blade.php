@@ -34,7 +34,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">Layout</a></li>
-             
+
             </ol>
           </div>
         </div>
@@ -43,7 +43,7 @@
 
     <!-- Main content -->
     <section class="content">
-    
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -69,7 +69,7 @@
 </div>
 
 <!-- ./wrapper -->
- 
+
 <!-- jQuery -->
 <script src="{{url('backend/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
@@ -77,6 +77,6 @@
 <!-- AdminLTE App -->
 <script src="{{url('backend/dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{url('backend/dist/js/demo.js')}}"></script>
+{{-- <script src="{{url('backend/dist/js/demo.js')}}"></script> --}}
 </body>
 </html>

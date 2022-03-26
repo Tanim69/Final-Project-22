@@ -24,12 +24,11 @@
        <td> {{$data->name}}</td>
        <td> {{$data->email}}</td>
        <td> {{$data->address}}</td>
-       <td> {{$data->image}}</td>
-
+       <td > <img src="{{url('/uploads/'.$data->image)}}" style="height:50px; width:90px;" ></td>
        <td>
            <a class="btn btn-success"  href="">View</a>
            <a class="btn btn-primary"  href="">Edit</a>
-           <a class="btn btn-danger" href="">Delete</a>
+           <a class="btn btn-danger" href="{{route('house.delete',$data->id)}}">Delete</a>
        </td>
   </tr>
   @endforeach

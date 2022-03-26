@@ -45,5 +45,13 @@ class HouseController extends Controller
     {
         return view('backend.pages.dashboard.home');
     }
+      public function delete($id)
+    {
+         $house=house::find($id);
+         $house->delete();
+        return redirect()->back();
+    }
+
+
 
 }
