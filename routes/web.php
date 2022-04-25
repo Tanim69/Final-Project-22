@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend/pages/dashboard/home');
 })->name('dashboard');
+Route::get('/login',[UserController::class,'login'])->name('login');
 Route::get('/house',[HouseController::class,'list'])->name('house');
 Route::post('/house/create',[HouseController::class,'create'])->name('house.create');
 Route::get('/house/delete/{id}',[HouseController::class,'delete'])->name('house.delete');

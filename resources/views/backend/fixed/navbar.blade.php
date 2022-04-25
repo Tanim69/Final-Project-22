@@ -13,7 +13,7 @@
           <img src="{{('/backend/dist/img/mehadi.jpg')}}" class="img-circle"style="height:90px; width:90px;" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Rezvi Ahmed Tanim</a>
+          <a href="#" class="d-block">MeHaDi HaSan</a>
           <h5 style="color:white;">Administration</h5>
         </div>
       </div>
